@@ -41,6 +41,9 @@ namespace PerformanceCounterCollector.Timer
                 _interval);
         }
 
+        /// <summary>
+        /// Destructor for not calling <see cref="Dispose()"/> method.
+        /// </summary>
         ~TimerPerformanceCounterCollector()
         {
             Dispose(false);
@@ -55,6 +58,10 @@ namespace PerformanceCounterCollector.Timer
             GC.SuppressFinalize(this);
         }
 
+        /// <summary>
+        /// Free, release, or reset managed or unmanaged resources.
+        /// </summary>
+        /// <param name="disposing">Wether to free, release, or resetting unmanaged resources or not.</param>
         protected virtual void Dispose(bool disposing)
         {
             if (_disposed)

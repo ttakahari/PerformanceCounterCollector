@@ -219,7 +219,7 @@ namespace PerformanceCounterCollector.Tests
                            && parameters[2].GetCustomAttribute(typeof(OptionalAttribute), false) != null;
                 });
 
-            var arg1 = Expression.Parameter(typeof(T), typeof(T) is PerformanceCounter ? "counter" : "counters");
+            var arg1 = Expression.Parameter(typeof(T), typeof(T) == typeof(PerformanceCounter) ? "counter" : "counters");
             var arg2 = Expression.Parameter(typeof(Action<PerformanceCounter, float>), "valueHandler");
             var arg3 = Expression.Parameter(typeof(Action<PerformanceCounter, Exception>), "exceptionHandler");
 

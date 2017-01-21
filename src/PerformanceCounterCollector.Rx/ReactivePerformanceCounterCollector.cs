@@ -39,6 +39,9 @@ namespace PerformanceCounterCollector.Rx
                 .Subscribe(_ => _collector.Collect());
         }
 
+        /// <summary>
+        /// Destructor for not calling <see cref="Dispose()"/> method.
+        /// </summary>
         ~ReactivePerformanceCounterCollector()
         {
             Dispose(false);
@@ -53,6 +56,10 @@ namespace PerformanceCounterCollector.Rx
             GC.SuppressFinalize(this);
         }
 
+        /// <summary>
+        /// Free, release, or reset managed or unmanaged resources.
+        /// </summary>
+        /// <param name="disposing">Wether to free, release, or resetting unmanaged resources or not.</param>
         protected virtual void Dispose(bool disposing)
         {
             if (_disposed)
