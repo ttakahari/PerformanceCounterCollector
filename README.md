@@ -69,7 +69,7 @@ The difference is how to take intervals.
 
 Reactive-Extensions takes intervals after a process finishes, and ```System.Threading.Timer``` takes intervals immediately after a process begins.
 
-![difference](https://github.com/ttakahari/PerformanceCounterCollector/doc/difference.png)
+![difference](https://github.com/ttakahari/PerformanceCounterCollector/blob/master/doc/difference.png)
 
 You can keep collecting values of Performance Counter at regular intervals if you create a instance of ```ReactivePerformanceCounterCollector``` or ```TimerPerformanceCounterCollector``` and call ```Collect``` method, while the instance keeping alive.
 
