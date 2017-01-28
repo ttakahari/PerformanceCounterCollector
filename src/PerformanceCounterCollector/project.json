@@ -1,15 +1,12 @@
 ﻿{
   "title": "PerformanceCounterCollector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The library for collecting values of Performance Counter, and for helping it.",
   "authors": [ "t.takahari" ],
   "copyright": "Copyright t.takahari 2017",
 
   "frameworks": {
     "net46": {
-      "frameworkAssemblies": {
-        "System.Runtime": "4.0.20"
-      }
     }
   },
 
@@ -21,6 +18,7 @@
     "owners": [ "t.takahari" ],
     "requireLicenseAcceptance": false,
     "licenseUrl": "http://opensource.org/licenses/MIT",
+    "projectUrl": "https://github.com/ttakahari/PerformanceCounterCollector",
     "repository": {
       "type": "git",
       "url": "https://github.com/ttakahari/PerformanceCounterCollector"

@@ -1,12 +1,12 @@
 ﻿{
   "title": "PerformanceCounterCollector.Rx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The library for collecting values of Performance Counter with using Reactive-Extensions.",
   "authors": [ "t.takahari" ],
   "copyright": "Copyright t.takahari 2017",
 
   "dependencies": {
-    "PerformanceCounterCollector": "[1.0.0,2.0.0)",
+    "PerformanceCounterCollector": "[1.0.1,2.0.0)",
     "System.Reactive": "[3.0.0,)"
   },
 
@@ -23,6 +23,7 @@
     "owners": [ "t.takahari" ],
     "requireLicenseAcceptance": false,
     "licenseUrl": "http://opensource.org/licenses/MIT",
+    "projectUrl": "https://github.com/ttakahari/PerformanceCounterCollector",
     "repository": {
       "type": "git",
       "url": "https://github.com/ttakahari/PerformanceCounterCollector"
