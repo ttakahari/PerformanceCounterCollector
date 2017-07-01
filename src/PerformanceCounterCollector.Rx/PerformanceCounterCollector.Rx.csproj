@@ -1,35 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <Description>The library for collecting values of Performance Counter with using Reactive-Extensions.</Description>
-    <Copyright>Copyright t.takahari 2017</Copyright>
-    <AssemblyTitle>PerformanceCounterCollector.Rx</AssemblyTitle>
-    <VersionPrefix>1.0.1</VersionPrefix>
-    <Authors>t.takahari</Authors>
-    <TargetFramework>net46</TargetFramework>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>PerformanceCounterCollector.Rx</AssemblyName>
-    <PackageId>PerformanceCounterCollector.Rx</PackageId>
-    <PackageProjectUrl>https://github.com/ttakahari/PerformanceCounterCollector</PackageProjectUrl>
-    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/ttakahari/PerformanceCounterCollector</RepositoryUrl>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-  </PropertyGroup>
+    <PropertyGroup>
+        <Description>Collecting values of Performance Counter at regular intervals, with using Reactive-Extensions.</Description>
+        <Copyright>Copyright t.takahari 2017</Copyright>
+        <AssemblyTitle>PerformanceCounterCollector.Rx</AssemblyTitle>
+        <VersionPrefix>1.0.1</VersionPrefix>
+        <Authors>t.takahari</Authors>
+        <TargetFramework>net46</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <AssemblyName>PerformanceCounterCollector.Rx</AssemblyName>
+        <PackageId>PerformanceCounterCollector.Rx</PackageId>
+        <PackageProjectUrl>https://github.com/ttakahari/PerformanceCounterCollector</PackageProjectUrl>
+        <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/ttakahari/PerformanceCounterCollector</RepositoryUrl>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PerformanceCounterCollector\PerformanceCounterCollector.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\PerformanceCounterCollector\PerformanceCounterCollector.csproj" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Reactive" Version="[3.0.0,)" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Reactive" Version="[3.0.0,)" />
+    </ItemGroup>
 
 </Project>
