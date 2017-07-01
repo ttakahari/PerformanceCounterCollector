@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>The library for collecting values of Performance Counter, and for helping it.</Description>
+    <Copyright>Copyright t.takahari 2017</Copyright>
+    <AssemblyTitle>PerformanceCounterCollector</AssemblyTitle>
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <Authors>t.takahari</Authors>
+    <TargetFramework>net46</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>PerformanceCounterCollector</AssemblyName>
+    <PackageId>PerformanceCounterCollector</PackageId>
+    <PackageProjectUrl>https://github.com/ttakahari/PerformanceCounterCollector</PackageProjectUrl>
+    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/ttakahari/PerformanceCounterCollector</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

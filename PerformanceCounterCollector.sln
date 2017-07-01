@@ -1,28 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0790D2CB-FE45-449E-9587-89152FAB7260}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7536DCC7-12B1-43AE-A6E0-2C6E9C890125}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PerformanceCounterCollector", "src\PerformanceCounterCollector\PerformanceCounterCollector.xproj", "{18DDC0A9-6261-4862-A5BB-B978953228E5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E7CC2869-5B24-437C-B93B-E9917A6AFA38}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PerformanceCounterCollector.Tests", "test\PerformanceCounterCollector.Tests\PerformanceCounterCollector.Tests.xproj", "{95C6F8D7-7E2A-4FDF-A62B-7A122102FC3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceCounterCollector", "src\PerformanceCounterCollector\PerformanceCounterCollector.csproj", "{18DDC0A9-6261-4862-A5BB-B978953228E5}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PerformanceCounterCollector.Rx", "src\PerformanceCounterCollector.Rx\PerformanceCounterCollector.Rx.xproj", "{551A6DE4-FEDD-4726-AC2D-46A99D041A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceCounterCollector.Tests", "test\PerformanceCounterCollector.Tests\PerformanceCounterCollector.Tests.csproj", "{95C6F8D7-7E2A-4FDF-A62B-7A122102FC3B}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PerformanceCounterCollector.Rx.Tests", "test\PerformanceCounterCollector.Rx.Tests\PerformanceCounterCollector.Rx.Tests.xproj", "{55FB313D-8C50-4AD7-8A51-90D5733ABDD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceCounterCollector.Rx", "src\PerformanceCounterCollector.Rx\PerformanceCounterCollector.Rx.csproj", "{551A6DE4-FEDD-4726-AC2D-46A99D041A5F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PerformanceCounterCollector.Timer", "src\PerformanceCounterCollector.Timer\PerformanceCounterCollector.Timer.xproj", "{8E801A0E-7C06-4C46-85DF-D0D7A7D06E87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceCounterCollector.Rx.Tests", "test\PerformanceCounterCollector.Rx.Tests\PerformanceCounterCollector.Rx.Tests.csproj", "{55FB313D-8C50-4AD7-8A51-90D5733ABDD7}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PerformanceCounterCollector.Timer.Tests", "test\PerformanceCounterCollector.Timer.Tests\PerformanceCounterCollector.Timer.Tests.xproj", "{B946ADCC-4919-4889-BC7A-AC9868B36B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceCounterCollector.Timer", "src\PerformanceCounterCollector.Timer\PerformanceCounterCollector.Timer.csproj", "{8E801A0E-7C06-4C46-85DF-D0D7A7D06E87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceCounterCollector.Timer.Tests", "test\PerformanceCounterCollector.Timer.Tests\PerformanceCounterCollector.Timer.Tests.csproj", "{B946ADCC-4919-4889-BC7A-AC9868B36B96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
