@@ -1,6 +1,6 @@
 # PerformanceCounterCollector
 
-The library for collecting values of Performance Counter, and for helping it.
+Collecting values of Performance Counter, and for helping it.
 
 If you want to collect at regular intervals, jump to [here](https://github.com/ttakahari/PerformanceCounterCollector#intervals).
 
@@ -29,7 +29,7 @@ var counter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
 var collector = new PerformanceCounterCollector(
     counter,
     (target, value) => Trace.TraceInformation($"{target.CategoryName} / {target.CounterName} / {target.InstanceName} - {value}"),
-    (target, exception) => Trace.TraceError($"{target.CategoryName} / {target.CounterName} / {target.InstanceName} - {value}")
+    (target, exception) => Trace.TraceError($"{target.CategoryName} / {target.CounterName} / {target.InstanceName} - {exception}")
 );
 
 // collect values of PerformanceCounter
@@ -78,7 +78,7 @@ You can keep collecting values of Performance Counter at regular intervals if yo
 var innerCollector = new PerformanceCounterCollector(
     counter,
     (target, value) => Trace.TraceInformation($"{target.CategoryName} / {target.CounterName} / {target.InstanceName} - {value}"),
-    (target, exception) => Trace.TraceError($"{target.CategoryName} / {target.CounterName} / {target.InstanceName} - {value}")
+    (target, exception) => Trace.TraceError($"{target.CategoryName} / {target.CounterName} / {target.InstanceName} - {exception}")
 );
 
 // Next, create a instance of ReactivePerformanceCounterCollector or TimerPerformanceCounterCollector,
