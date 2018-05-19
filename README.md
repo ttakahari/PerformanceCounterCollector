@@ -4,6 +4,9 @@ Collecting values of Performance Counter, and for helping it.
 
 If you want to collect at regular intervals, jump to [here](https://github.com/ttakahari/PerformanceCounterCollector#intervals).
 
+[![AppVeyor](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg?style=plastic)](https://ci.appveyor.com/project/ttakahari/PerformanceCounterCollector)
+[![NuGet](https://img.shields.io/nuget/v/PerformanceCounterCollector.svg?style=plastic)](https://www.nuget.org/packages/PerformanceCounterCollector/)
+
 ## Install
 
 from NuGet - [PerformanceCounterCollector](https://www.nuget.org/packages/PerformanceCounterCollector/)
