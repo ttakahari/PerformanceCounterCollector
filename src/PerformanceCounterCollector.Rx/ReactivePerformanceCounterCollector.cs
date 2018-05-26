@@ -21,11 +21,10 @@ namespace PerformanceCounterCollector.Rx
         /// <param name="interval">The execution interval.</param>
         public ReactivePerformanceCounterCollector(PerformanceCounterCollector collector, TimeSpan interval)
         {
-            if (collector == null)          throw new ArgumentNullException(nameof(collector));
-            if (interval  <= TimeSpan.Zero) throw new ArgumentOutOfRangeException(nameof(interval), $"The interval must be greater than {TimeSpan.Zero}.");
+            if (interval <= TimeSpan.Zero) throw new ArgumentOutOfRangeException(nameof(interval), $"The interval must be greater than {TimeSpan.Zero}.");
 
-            _collector = collector;
-            _interval  = interval;
+            _collector = collector ?? throw new ArgumentNullException(nameof(collector));
+            _interval = interval;
         }
 
         /// <summary>

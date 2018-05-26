@@ -18,7 +18,7 @@ namespace PerformanceCounterCollector
         public static PerformanceCounter Create(string categoryName, string counterName)
         {
             if (string.IsNullOrEmpty(categoryName)) throw new ArgumentNullException(nameof(categoryName));
-            if (string.IsNullOrEmpty(counterName))  throw new ArgumentNullException(nameof(counterName));
+            if (string.IsNullOrEmpty(counterName)) throw new ArgumentNullException(nameof(counterName));
 
             return new PerformanceCounter(categoryName, counterName);
         }
@@ -33,7 +33,7 @@ namespace PerformanceCounterCollector
         public static PerformanceCounter Create(string categoryName, string counterName, string instanceName)
         {
             if (string.IsNullOrEmpty(categoryName)) throw new ArgumentNullException(nameof(categoryName));
-            if (string.IsNullOrEmpty(counterName))  throw new ArgumentNullException(nameof(counterName));
+            if (string.IsNullOrEmpty(counterName)) throw new ArgumentNullException(nameof(counterName));
             if (string.IsNullOrEmpty(instanceName)) throw new ArgumentNullException(nameof(instanceName));
 
             return new PerformanceCounter(categoryName, counterName, instanceName);

@@ -39,16 +39,14 @@ namespace PerformanceCounterCollector
             Action<PerformanceCounter, float> valueHandler,
             Action<PerformanceCounter, Exception> exceptionHandler = null)
         {
-            if (counters     == null) throw new ArgumentNullException(nameof(counters));
-            if (valueHandler == null) throw new ArgumentNullException(nameof(valueHandler));
-
+            if (counters == null) throw new ArgumentNullException(nameof(counters));
             if (!counters.Any() || counters.All(x => x == null))
             {
                 throw new ArgumentOutOfRangeException(nameof(counters), $"{typeof(PerformanceCounter).FullName} instance is required at least one or more.");
             }
 
-            _counters         = counters;
-            _valueHandler     = valueHandler;
+            _counters = counters;
+            _valueHandler = valueHandler ?? throw new ArgumentNullException(nameof(valueHandler));
             _exceptionHandler = exceptionHandler;
         }
 
@@ -88,7 +86,7 @@ namespace PerformanceCounterCollector
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-        
+
         /// <summary>
         /// Free, release, or reset managed or unmanaged resources.
         /// </summary>
