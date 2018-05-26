@@ -24,9 +24,10 @@ namespace PerformanceCounterCollector
         public PerformanceCounterCollector(
             PerformanceCounter counter,
             Action<PerformanceCounter, float> valueHandler,
-            Action<PerformanceCounter, Exception> exceptionHandler = null
-            ) : this(new[] { counter }, valueHandler, exceptionHandler)
-        { }
+            Action<PerformanceCounter, Exception> exceptionHandler = null)
+            : this(new[] { counter }, valueHandler, exceptionHandler)
+        {
+        }
 
         /// <summary>
         /// Create a new <see cref="PerformanceCounterCollector"/> instance.
@@ -74,9 +75,7 @@ namespace PerformanceCounterCollector
         /// Destructor for not calling <see cref="Dispose()"/> method.
         /// </summary>
         ~PerformanceCounterCollector()
-        {
-            Dispose(false);
-        }
+            => Dispose(false);
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.

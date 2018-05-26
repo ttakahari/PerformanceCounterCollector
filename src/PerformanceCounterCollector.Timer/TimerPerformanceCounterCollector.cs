@@ -44,9 +44,7 @@ namespace PerformanceCounterCollector.Timer
         /// Destructor for not calling <see cref="Dispose()"/> method.
         /// </summary>
         ~TimerPerformanceCounterCollector()
-        {
-            Dispose(false);
-        }
+            => Dispose(false);
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.

@@ -42,9 +42,7 @@ namespace PerformanceCounterCollector.Rx
         /// Destructor for not calling <see cref="Dispose()"/> method.
         /// </summary>
         ~ReactivePerformanceCounterCollector()
-        {
-            Dispose(false);
-        }
+            => Dispose(false);
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
